@@ -1,0 +1,350 @@
+@charset "UTF-8";
+body {
+  background: #282c37 url("~images/space-bg.jpg");
+}
+
+.about-body .wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px;
+}
+.about-body .wrapper ol {
+  margin-bottom: 26px;
+}
+
+.spacecore {
+  animation: rotateCore 15s linear infinite;
+  background: url("~images/spacecore.png") no-repeat;
+  background-size: cover;
+  height: 150px;
+  margin: 15px auto 30px;
+  width: 150px;
+}
+
+@keyframes rotateCore {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(100deg);
+  }
+  60% {
+    transform: rotate(220deg);
+  }
+  80% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 1338px) {
+  body.app-body .column, body.app-body .column__wrapper {
+    flex: 1 1 0;
+  }
+}
+.status.status-direct {
+  background: #313543 !important;
+}
+
+body.app-body .status__content .status__content__spoiler-link {
+  color: #37aac0;
+}
+
+.columns-area {
+  margin: 0;
+}
+
+.pagination a {
+  background: #282c37;
+}
+
+.bg-profile {
+  display: none;
+}
+
+@supports (filter: blur(8px)) {
+  .bg-profile {
+    display: block;
+    filter: blur(8px);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .bg-profile .bg-profile-img {
+    background-size: cover;
+    background-position: center;
+    height: calc(100% + 30px);
+    margin: -15px;
+    width: calc(100% + 30px);
+  }
+}
+.drawer .drawer--header,
+.drawer .contents {
+  background: transparent !important;
+}
+.drawer .drawer--header .mastodon,
+.drawer .contents .mastodon {
+  outline: 0;
+}
+.drawer .drawer--header .mastodon::-moz-focus-inner,
+.drawer .contents .mastodon::-moz-focus-inner {
+  border: none;
+}
+
+.getting-started {
+  background: transparent;
+}
+
+body.app-body .button {
+  background-color: #ff9800;
+}
+body.app-body .button:hover,
+body.app-body .button:focus,
+body.app-body .button:active,
+body.app-body .button:disabled {
+  background-color: #ffa51f;
+}
+body.app-body .ui {
+  background-color: #223;
+}
+body.app-body .drawer .drawer__header, body.app-body .column-header, body.app-body .column-icon {
+  background-color: #223;
+}
+body.app-body .column-icon {
+  color: #eee;
+  transition: all 200ms;
+}
+body.app-body .column-icon:hover {
+  color: #fff;
+}
+body.app-body .column-icon.collapsable {
+  background-color: #3aaacf;
+  color: #fff;
+  font-size: 20px !important;
+  padding-bottom: 13px !important;
+}
+body.app-body .column-settings--outer, body.app-body .column-settings--section, body.app-body .setting-toggle {
+  background-color: #3aaacf;
+  color: #fff;
+}
+body.app-body .setting-text,
+body.app-body .setting-text:hover,
+body.app-body .setting-text:focus {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+body.app-body .react-toggle--checked .react-toggle-track, body.app-body .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #223;
+}
+body.app-body .react-toggle--checked .react-toggle-thumb {
+  border-color: #223;
+}
+body.app-body .drawer .drawer__header .drawer__tab {
+  color: #3aaacf;
+}
+body.app-body .drawer .drawer__header a:hover {
+  background-color: #223;
+  color: #61b4cf;
+}
+body.app-body .search__input {
+  background-color: #223;
+  transition: all 200ms;
+  color: #fff;
+}
+body.app-body .search__input:hover,
+body.app-body .search__input:focus {
+  background-color: #eee;
+  color: #000;
+}
+body.app-body .drawer__inner {
+  background-color: #223;
+}
+body.app-body .drawer__inner__mastodon {
+  background-color: #223;
+}
+body.app-body .navigation-bar {
+  color: #eee;
+}
+body.app-body .navigation-bar strong {
+  font-size: 14px;
+  margin-top: 2px;
+}
+body.app-body .search-results__header {
+  background-color: #223;
+  color: #eee;
+  text-transform: capitalize;
+}
+body.app-body .drawer__inner.darker {
+  background-color: #223;
+}
+body.app-body .account__display-name {
+  outline: none;
+}
+body.app-body .display-name span {
+  color: #ddd;
+}
+body.app-body .icon-button:hover,
+body.app-body .icon-button:focus,
+body.app-body .icon-button:active,
+body.app-body .icon-button.active {
+  color: #fff;
+}
+body.app-body .status__prepend,
+body.app-body .status,
+body.app-body .column > .scrollable {
+  background-color: #223;
+  color: #fff;
+  border-bottom: 0;
+}
+body.app-body .notification__message {
+  color: #ccc;
+}
+body.app-body .status .status__relative-time {
+  color: #ccc;
+}
+body.app-body .status__content a .fa,
+body.app-body .status__content a .fa:hover {
+  color: #3aaacf;
+}
+body.app-body .status__content a,
+body.app-body .reply-indicator__content a,
+body.app-body .getting-started a,
+body.app-body .muted .status__content a,
+body.app-body .account__header .account__header__username {
+  color: #3aaacf;
+}
+body.app-body .muted .status__display-name strong {
+  color: #ccc;
+}
+body.app-body .status__prepend .status__display-name strong {
+  color: #fff;
+  outline: none;
+}
+body.app-body .muted .status__content p {
+  color: #ccc;
+}
+body.app-body .column-link, body.app-body .column {
+  background-color: #223;
+}
+body.app-body .account__action-bar,
+body.app-body .account__action-bar__tab,
+body.app-body .detailed-status__action-bar {
+  border: 0;
+  background: #223;
+}
+body.app-body .account {
+  border-bottom: 0;
+}
+body.app-body .column-back-button {
+  background-color: #223;
+  color: #ff9800;
+}
+body.app-body .status__content .status__content__spoiler-link, body.app-body .reply-indicator__content .status__content__spoiler-link {
+  background: #29293d;
+}
+body.app-body .autosuggest-textarea__suggestions {
+  background: #fff;
+}
+body.app-body .autosuggest-textarea__suggestions__item:hover {
+  background: #3aaacf;
+  color: #fff;
+}
+body.app-body .autosuggest-textarea__suggestions__item.selected {
+  background: #3aaacf;
+  color: #fff;
+}
+body.app-body .reply-indicator {
+  background: #29293d;
+}
+body.app-body .reply-indicator__content {
+  color: #fff;
+}
+body.app-body .reply-indicator .reply-indicator__display-name {
+  color: #fff;
+}
+body.app-body .search__icon .fa {
+  color: #ff9800;
+}
+body.app-body .detailed-status {
+  background: #223;
+}
+body.app-body .account__header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background: #223;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+body.app-body .account__header > div {
+  background: linear-gradient(to bottom, rgba(34, 34, 51, 0.1), #223);
+}
+body.app-body .icon-button.inverted {
+  color: #3aaacf;
+}
+body.app-body .icon-button.inverted.active {
+  color: #3aaacf;
+}
+body.app-body .icon-button.inverted:hover, body.app-body .icon-button.inverted:active, body.app-body .icon-button.inverted:focus {
+  color: #61b4cf;
+}
+body.app-body .text-icon-button.active {
+  color: #ff9800;
+}
+body.app-body .privacy-dropdown__option.active {
+  background: #3aaacf;
+}
+body.app-body .privacy-dropdown__option:hover {
+  background: #3aaacf;
+}
+body.app-body .privacy-dropdown__option.active:hover {
+  background: #3aaacf;
+}
+body.app-body .column-header__button {
+  background: #223;
+}
+body.app-body .column-header__button.active, body.app-body .column-header__button.active:hover {
+  background: #3aaacf;
+}
+body.app-body .column-header__collapsible-inner {
+  background: #3aaacf;
+  color: #fff !important;
+}
+body.app-body .column-settings__section {
+  color: #fff;
+}
+body.app-body .setting-meta__label, body.app-body .setting-toggle__label {
+  color: #fff;
+}
+body.app-body .column-subheading {
+  background: #223;
+}
+body.app-body button.active .fa-retweet::after {
+  color: #ff9800;
+  content: "";
+}
+body.app-body .icon-button:hover, body.app-body .icon-button:focus, body.app-body .icon-button:active, body.app-body .icon-button.active {
+  color: #3aaacf;
+}
+body.app-body .active .fa-star::before,
+body.app-body .fa.fa-fw.fa-star.star-icon::before,
+body.app-body .fa.fa-fw.fa-user-times {
+  color: #3aaacf;
+}
+body.app-body .column-header__back-button {
+  background: #223;
+  color: #ff9800;
+}
+body.app-body .column-header__back-button:hover {
+  color: #ffa51f;
+}
